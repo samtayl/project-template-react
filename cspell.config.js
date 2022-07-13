@@ -6,7 +6,6 @@ module.exports = {
     'npm',
   ],
   words: [
-    'cspellrc',
     'commitlint',
     'pmmmwh',
     'samtayl',

@@ -42,7 +42,7 @@
     "@commitlint/config-conventional": "^17.0.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@samtayl/eslint-config": "^1.2.0",
-    "@samtayl/eslint-config-node": "^1.0.0",
+    "@samtayl/eslint-config-node": "^1.1.0",
     "@svgr/webpack": "^6.2.1",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
@@ -67,6 +67,9 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
     "webpack-manifest-plugin": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "packageManager": "yarn@3.2.1"
 }

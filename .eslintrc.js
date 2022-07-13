@@ -1,28 +1,20 @@
 module.exports = {
   root: true,
+  extends: [
+    '@samtayl',
+    '@samtayl/node',
+    'plugin:react/recommended',
+  ],
   env: {
     browser: true,
-    node: true,
-    es6: true,
+    es2020: true,
   },
   parserOptions: {
-    ecmaVersion: 'latest',
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaVersion: '2020',
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
-  plugins: [
-    'node',
-    'react',
-  ],
-  extends: [
-    '@samtayl',
-    '@samtayl/node',
-    'plugin:react/recommended',
-  ],
 };
