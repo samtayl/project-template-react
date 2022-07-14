@@ -9,6 +9,7 @@ const ReactRefreshWebpackPlugin
 
 const ReactRefreshBabelPlugin = require('react-refresh/babel');
 const {WebpackManifestPlugin} = require('webpack-manifest-plugin');
+const eslintConfig = require('./eslint.config');
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 module.exports = {
@@ -33,7 +34,9 @@ module.exports = {
       title: 'React app',
       template: path.resolve(__dirname, 'src/index.html'),
     }),
-    new ESLintWebpackPlugin(),
+    new ESLintWebpackPlugin({
+      baseConfig: eslintConfig,
+    }),
     new MiniCssExtractPlugin({
       filename: isDevelopment
         ? '[name].css'
